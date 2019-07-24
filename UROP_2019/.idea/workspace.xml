@@ -10,7 +10,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/count_rate/numbers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
@@ -18,6 +18,15 @@
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/compare/19704_stuff.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -47,6 +56,7 @@
         <option value="$PROJECT_DIR$/count_rate/18731_sources.txt" />
         <option value="$PROJECT_DIR$/count_rate/19704_sources.txt" />
         <option value="$PROJECT_DIR$/count_rate/numbers.py" />
+        <option value="$PROJECT_DIR$/compare/19704_stuff.txt" />
       </list>
     </option>
   </component>
@@ -70,7 +80,7 @@
             <path>
               <item name="UROP_2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="UROP_2019" type="462c0819:PsiDirectoryNode" />
-              <item name="count_rate" type="462c0819:PsiDirectoryNode" />
+              <item name="compare" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UROP_2019" type="b2602c69:ProjectViewProjectNode" />
@@ -139,7 +149,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1197" height="1378" extended-state="4" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879807" visible="true" weight="0.29326513" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879807" visible="true" weight="0.29326513" />
       <window_info id="Structure" order="1" sideWeight="0.5012019" side_tool="true" weight="0.27388534" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -150,7 +160,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32957292" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32957292" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32957292" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -251,6 +261,13 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compare/19704_stuff.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
