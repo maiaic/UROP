@@ -5,8 +5,6 @@ from sherpa.optmethods import LevMar
 from sherpa import data
 
 z = np.random.gamma(20, scale=0.5, size=1000)
-print(z)
-print(len(z))
 (y, edges) = np.histogram(z)
 d2 = data.Data1DInt('gamma', edges[:-1], edges[1:], y)
 print(d2)

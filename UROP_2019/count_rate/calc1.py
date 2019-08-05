@@ -19,10 +19,12 @@ for filename in files:
 rates = []
 for obsid in sources.keys():
     for source in sources[obsid]:
-        rates.append(source.get_net_rate())
+        # rates.append(source.get_net_rate())
+        rates.append(source.get_signif())
 
 # Make a histogram of NET_RATE => try to fit with gaussian curve to take out outliers + find a good range
-rates_array = np.array([i for i in rates if 10 < i < 600])
+# rates_array = np.array([i for i in rates if 10 < i < 600])
+rates_array = np.array([i for i in rates])
 print(len(rates_array))
 (y, edges) = np.histogram(rates_array, "auto")
 d2 = data.Data1DInt('gamma', edges[:-1], edges[1:], y)
