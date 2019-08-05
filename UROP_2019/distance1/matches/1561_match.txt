@@ -1,0 +1,5 @@
+ input (dup) src file : data/1561/repro/*_src.fits
+ input ref src file   : data/19704/repro/19704_src.fits
+ input wcsfile        : 19704/repro/19704_broad_thresh.img
+ debug level          : 1
+
