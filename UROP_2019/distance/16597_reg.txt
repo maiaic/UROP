@@ -1,0 +1,11 @@
+# Region file format: DS9 version 4.1
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+fk5
+ellipse(17:45:39.0724,-29:01:19.454,2.738",1.664",141.39677)
+ellipse(17:45:40.1482,-29:00:29.590,1.986",1.538",45.852013) # color=magenta
+ellipse(17:45:39.7457,-29:00:29.310,2.894",2.679",65.381461) # color=magenta
+ellipse(17:45:38.0536,-29:00:22.140,2.502",1.733",146.54875) # color=magenta
+ellipse(17:45:39.7829,-29:00:21.510,2.963",2.189",97.979801) # color=magenta
+ellipse(17:45:40.2722,-29:00:05.302,1.278",0.522",45.005039)
+ellipse(17:45:37.7881,-28:59:07.546,2.573",1.730",140.43707)
+ellipse(17:45:40.1842,-28:59:01.170,3.990",1.166",95.702048) # color=magenta
