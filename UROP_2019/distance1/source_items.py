@@ -18,7 +18,7 @@ class Source():
         :Parameters:
         param - a list of information about a given source created by load_sources_list
         """
-        self.row = int(param[0])
+        self.row = param[0]
         self.ra = float(param[1])
         self.dec = float(param[2])
         self.ra_err = float(param[3])
@@ -85,7 +85,7 @@ class Source():
     def display_notes(self):
         return self.notes
 
-    def sourcematch(self, source):
+    def source_match(self, source):
         self.match = source
 
     def get_match(self):
@@ -93,6 +93,12 @@ class Source():
 
     def get_row(self):
         return self.row
+
+    def get_x_err(self):
+        return self.x_err
+
+    def get_y_err(self):
+        return self.y_err
 
 ### ----------------------------------------------------------------------------- ###
 
@@ -103,25 +109,25 @@ def load_sources_list(filename):
 
     :return: a list of the point sources
     """
-    source_data = open(filename, "r")
     sources = []
+    # print(filename)
+    with open(filename, "r") as source_data:
+        for line in source_data:
+            a_list = line.split()
+            # print(a_list)
+            if len(a_list) > 0 and a_list[0].isdigit():
+                for place, item in enumerate(a_list):
+                    # print(item)
+                    # print(place)
+                    item = item.replace("[", "")
+                    item = item.replace("]", "")
+                    item = item.replace("(", "")
+                    item = item.replace(")", "")
+                    item = item.replace(",", "")
+                    # print(item)
+                    a_list[place] = item
 
-    for line in source_data:
-        a_list = line.split()
-
-        if len(a_list) > 0:
-            for place, item in enumerate(a_list):
-                item = item.replace("[", "")
-                item = item.replace("]", "")
-                item = item.replace("(", "")
-                item = item.replace(")", "")
-                item = item.replace(",", "")
-                a_list[place] = item
-
-            try:
                 sources.append(Source([i for i in a_list if len(i) > 0]))
-            except:
-                pass
 
     return sources
 
@@ -134,13 +140,22 @@ def find_distance(source1, source2):
     source2 - another Source object
 
     :return:
-    The distance between two Source objects
+    a tuple of the  distance between two Source objects and the error in that distance calculation
     """
     x1 = source1.get_x()
+    x1_e = source1.get_x_err()
+
     x2 = source2.get_x()
+    x2_e = source2.get_x_err()
+
     y1 = source1.get_y()
+    y1_e = source1.get_y_err()
+
     y2 = source2.get_y()
+    y2_e = source2.get_y_err()
 
     dist = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+    perc_err = ((x2_e + x1_e)*abs(x2 - x1) + (y2_e + y1_e)*abs(y2-y1))/((x2 - x1)**2 + (y2 - y1)**2)
+    err = dist * perc_err
 
-    return dist
+    return (dist, err)
