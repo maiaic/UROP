@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as dates
 from scipy.optimize import curve_fit
 from scipy.stats import chisquare
-import sherpa
 import math
 import actions
 import datetime
@@ -43,12 +42,14 @@ def make_a_document(source_pair, x, y, y_err, y_linear, y_null, linear_fit, line
     rms_linear = rms(y, y_linear)
     rms_null = rms(y, y_null)
 
-    chi2_linear = chisquare(y, y_linear, ddof=1)
+    ddof = len(y) - 1
+
+    chi2_linear = chisquare(y, y_linear, ddof=ddof)
 
     data_file = open("plots/distance_%s_%s_data.txt" % (source1, source2), "w+")
 
     data_file.write("Distance between %s and %s\n" % (source1, source2))
-    data_file.write("––––––––––––––––––––––––––––––––––––––––––––––\n")
+    data_file.write("------------------------------------------------\n")
 
     data_file.write("\n")
 
@@ -73,7 +74,7 @@ def make_a_document(source_pair, x, y, y_err, y_linear, y_null, linear_fit, line
 
     data_file.write("\n")
 
-    data_file.write("––––––––––––––––––––––––––––––––––––––––––––––\n")
+    data_file.write("------------------------------------------------\n")
 
     data_file.write("\n")
 
@@ -134,11 +135,14 @@ def lets_do_a_graph(source_pair, start_date="1999-01-01", end_date="2020-01-01")
     y = np.array(y)
     err = np.array(err)
 
-    popt_linear, pcov_linear = curve_fit(linear, x, y, sigma=err, absolute_sigma=True)
-    popt_const, pcov_const = curve_fit(const, x, y, sigma=err, absolute_sigma=True)
+    popt_linear, pcov_linear = curve_fit(linear, x, y, sigma=err)
+    popt_const, pcov_const = curve_fit(const, x, y, sigma=err)
 
-    yfit_linear = linear(x, *popt_linear)
-    yfit_const = const(x, *popt_const)
+    print("popt_linear=" , popt_linear)
+    print("popt_const=" , popt_const)
+
+    yfit_linear = linear(x, popt_linear[0], popt_linear[1])
+    yfit_const = const(x, popt_const[0])
 
     fig, ax = plt.subplots()
 

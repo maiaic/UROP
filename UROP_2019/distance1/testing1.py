@@ -1,6 +1,8 @@
 import graph_that
+from actions import to_graph
 
-graph_that.lets_do_a_graph(("N", "H"))
-graph_that.lets_do_a_graph(("U", "N"))
-graph_that.lets_do_a_graph(("Magnetar", "E"))
-graph_that.lets_do_a_graph(("Magnetar", "N"))
+data_points = to_graph()
+
+for pair in data_points.keys():
+    graph_that.lets_do_a_graph(pair)
+
