@@ -110,21 +110,18 @@ def load_sources_list(filename):
     :return: a list of the point sources
     """
     sources = []
-    # print(filename)
+
     with open(filename, "r") as source_data:
         for line in source_data:
             a_list = line.split()
-            # print(a_list)
+            
             if len(a_list) > 0 and a_list[0].isdigit():
                 for place, item in enumerate(a_list):
-                    # print(item)
-                    # print(place)
                     item = item.replace("[", "")
                     item = item.replace("]", "")
                     item = item.replace("(", "")
                     item = item.replace(")", "")
                     item = item.replace(",", "")
-                    # print(item)
                     a_list[place] = item
 
                 sources.append(Source([i for i in a_list if len(i) > 0]))

@@ -30,21 +30,17 @@ def to_graph():
             obsid_sources = source_data[obsid]
             obsid_matches = match_data[obsid]
             source_pairs = list(itertools.combinations(obsid_sources, 2))
-            #print(obsid_matches.keys())
-            #print(source_pairs)
+
             for pair in source_pairs:
                 source1 = pair[0]
                 source2 = pair[1]
 
-                #print(source2)
                 if source1.get_row() in obsid_matches.keys() and source2.get_row() in obsid_matches.keys():
                     source1.source_match(obsid_matches[source1.get_row()])
                     id1 = source1.get_match()
-                    # print(id1)
 
                     source2.source_match(obsid_matches[source2.get_row()])
                     id2 = source2.get_match()
-                    # print(id2)
 
                     datapoint = (obsid, find_distance(source1, source2))
 
@@ -56,12 +52,12 @@ def to_graph():
                     else:
                         to_graph[(id1, id2)] = [datapoint]
 
-    #print[to_graph]
-
     return to_graph
 
-# Step 6: Make a dictionary matching obsids to dates
 def dates_dict():
+    """
+    Creates a dictionary matching obsids to dates
+    """
     some_files = ["obslog_acis-i.txt", "obslog_acis-s.txt"]
     dates_dict = {}
 
@@ -71,18 +67,20 @@ def dates_dict():
                 items = line.split()
                 if len(items) > 0 and items[0].isdigit():
                     dates_dict[items[1]] = items[2][0:10]
-    # print(dates_dict)
     return dates_dict
 
 def reverse_dates_dict():
-        some_files = ["obslog_acis-i.txt", "obslog_acis-s.txt"]
-        dates_dict = {}
+    """
+    Creates a dictionary matching dates to obsids
+    """
+    some_files = ["obslog_acis-i.txt", "obslog_acis-s.txt"]
+    dates_dict = {}
 
-        for filename in some_files:
-            with open(filename, "r") as dates_file:
-                for line in dates_file:
-                    items = line.split()
-                    if len(items) > 0 and items[0].isdigit():
-                        dates_dict[items[2][0:10]] = items[1]
-        # print(dates_dict)
-        return dates_dict
+    for filename in some_files:
+        with open(filename, "r") as dates_file:
+            for line in dates_file:
+                items = line.split()
+                if len(items) > 0 and items[0].isdigit():
+                    dates_dict[items[2][0:10]] = items[1]
+
+    return dates_dict

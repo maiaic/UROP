@@ -139,9 +139,6 @@ def graph_distances(source_pair, start_date="1999-01-01", end_date="2020-01-01")
     popt_linear, pcov_linear = curve_fit(linear, x, y, sigma=err)
     popt_const, pcov_const = curve_fit(const, x, y, sigma=err)
 
-    print("popt_linear=" , popt_linear)
-    print("popt_const=" , popt_const)
-
     yfit_linear = linear(x, popt_linear[0], popt_linear[1])
     yfit_const = const(x, popt_const[0])
 
