@@ -58,7 +58,7 @@ def make_a_document(source_pair, x, y, y_err, y_linear, y_null, linear_fit, line
     data_file.write("\n")
 
     data_file.write("Linear fit parameters: %s\n" % linear_fit)
-    data_file.write("Degrees of freedom: 1\n")
+    data_file.write("Degrees of freedom: %s\n" % ddof)
     data_file.write("Linear covariance matrix: \n%s\n" % linear_cov)
     data_file.write("rms error in linear fit: %s\n" % rms_linear)
 
