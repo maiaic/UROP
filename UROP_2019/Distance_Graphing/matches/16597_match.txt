@@ -1,0 +1,30 @@
+ input (dup) src file : data/16597/repro/16597_src.fits
+ input ref src file   : data/19704/repro/19704_src.fits
+ input wcsfile        : 19704/repro/19704_broad_thresh.img
+ debug level          : 1
+
+5 common sources found between: 
+data/19704/repro/19704_src.fits
+data/16597/repro/16597_src.fits
+After deleting poor matches, 5 sources remain
+
+Source Residuals
+----------------
+ Ref#  Dup#    Ref RA      Ref Dec.    Prior  Transfm  Resid Incl
+                                       Resid  Resid    Ratio
+   9     1    266.41740   -29.00828    0.42    0.12    0.84    Y
+  10     2    266.41575   -29.00825    0.58    0.21    1.07    Y
+  13     3    266.40866   -29.00627    0.55    0.18    0.78    Y
+  14     4    266.41584   -29.00612    0.57    0.25    1.02    Y
+  23     7    266.41741   -28.98361    0.21    0.57    1.19    Y
+
+Source Residuals, before/after transform (arcsec), and percentage improvement:
+
+   Average Residuals:         0.466700   0.264524   43.32%
+   Maximum Residuals:         0.582455   0.565155    2.97%
+
+Source Residual Ratios, before/after transform, and percentage improvement:
+
+   Average Residual Ratios:   2.224057   0.980187   55.93%
+   Maximum Residual Ratios:   3.000597   1.190266   60.33%
+

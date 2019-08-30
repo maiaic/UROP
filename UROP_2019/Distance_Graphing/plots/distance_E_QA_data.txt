@@ -1,0 +1,25 @@
+Distance between E and QA
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [ 2.36125038e-04 -3.23572237e+01]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[inf inf]
+ [inf inf]]
+rms error in linear fit: 2.842170943040401e-14
+
+Null fit parameter: [141.10813222]
+Null covariance matrix: 
+[[0.38479604]]
+rms error in null fit: 0.9675038683241456
+
+chi-squared test statistic: 5.706484437616359e-30
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2002-06-03    3665   140.25112374009922    0.6975403331457539
+1 2017-07-25    19704   141.55713132615458    0.5048931750339276

@@ -1,0 +1,25 @@
+Distance between Q and Magnetar
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [-3.24836215e-02  2.39728060e+04]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[inf inf]
+ [inf inf]]
+rms error in linear fit: 1.4524473784541177e-12
+
+Null fit parameter: [47.74194172]
+Null covariance matrix: 
+[[0.01684679]]
+rms error in null fit: 0.2680018288729631
+
+chi-squared test statistic: 4.4218383408805086e-26
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2017-07-15    19703   47.80672352468658    0.14675474332321617
+1 2017-07-25    19704   47.481887309862145    0.29403413887337587

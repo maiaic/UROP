@@ -1,0 +1,26 @@
+Distance between U and Y
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [ 4.56593129e-04 -1.79570295e+02]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[ 1.11353030e-08 -8.17786316e-03]
+ [-8.17786316e-03  6.00592264e+03]]
+rms error in linear fit: 0.6215144233552666
+
+Null fit parameter: [155.75566318]
+Null covariance matrix: 
+[[0.28562475]]
+rms error in null fit: 1.1735977111121196
+
+chi-squared test statistic: 0.002492300450204214
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2007-02-11    7554   155.59945824536152    1.0073258031478178
+1 2008-07-25    9174   155.14317628817133    0.34222162975851644
+2 2017-07-25    19704   156.7444965397499    0.42856926117073396

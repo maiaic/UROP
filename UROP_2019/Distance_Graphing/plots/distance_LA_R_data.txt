@@ -1,0 +1,25 @@
+Distance between LA and R
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [ 1.37763996e-03 -9.00667248e+02]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[inf inf]
+ [inf inf]]
+rms error in linear fit: 1.0247593068766006e-13
+
+Null fit parameter: [113.54457487]
+Null covariance matrix: 
+[[0.12134994]]
+rms error in null fit: 0.5351653942979862
+
+chi-squared test statistic: 9.228844197762168e-29
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2016-02-13    18055   113.28540317441212    0.36891300912742003
+1 2017-07-25    19704   114.01279707131849    0.4958567049656645

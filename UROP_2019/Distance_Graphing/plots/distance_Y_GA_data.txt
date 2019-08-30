@@ -1,0 +1,25 @@
+Distance between Y and GA
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [ 3.11458097e-04 -4.96920187e+01]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[inf inf]
+ [inf inf]]
+rms error in linear fit: 0.0
+
+Null fit parameter: [179.10849434]
+Null covariance matrix: 
+[[0.2543847]]
+rms error in null fit: 0.7343846348329892
+
+chi-squared test statistic: 0.0
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2008-07-25    9174   178.68400773547867    0.8822560557645203
+1 2017-07-25    19704   179.7077704991275    1.0482772297142435

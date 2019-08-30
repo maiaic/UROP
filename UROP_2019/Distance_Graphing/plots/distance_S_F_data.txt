@@ -1,0 +1,26 @@
+Distance between S and F
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [-1.11974603e-04  2.90841098e+02]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[ 1.74874887e-08 -1.28649157e-02]
+ [-1.28649157e-02  9.46430832e+03]]
+rms error in linear fit: 0.36499502697342906
+
+Null fit parameter: [208.46541484]
+Null covariance matrix: 
+[[0.04562097]]
+rms error in null fit: 0.5492672247317268
+
+chi-squared test statistic: 0.0006393549853959358
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2005-07-27    5951   208.85963676221976    0.6365446065245687
+1 2017-07-15    19703   208.12457838409517    0.4357219048579837
+2 2017-07-25    19704   208.63894890318366    0.45937810168278587

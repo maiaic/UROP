@@ -1,0 +1,26 @@
+Distance between G and X
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [-7.99669636e-04  6.48471296e+02]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[ 4.28522810e-07 -3.15571148e-01]
+ [-3.15571148e-01  2.32391773e+05]]
+rms error in linear fit: 0.3672766292902074
+
+Null fit parameter: [59.58160612]
+Null covariance matrix: 
+[[0.07544991]]
+rms error in null fit: 1.0739681534138172
+
+chi-squared test statistic: 0.002267449544406495
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2013-10-28    15045   60.58931228220632    0.5503207274303037
+1 2017-07-15    19703   59.261850995179614    0.22335679387224558
+2 2017-07-25    19704   59.77053081884855    0.24758518261448034

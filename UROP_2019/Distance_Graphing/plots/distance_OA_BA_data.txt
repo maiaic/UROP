@@ -1,0 +1,26 @@
+Distance between OA and BA
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [1.30986234e-04 3.35691198e+01]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[ 2.97201895e-08 -2.17938881e-02]
+ [-2.17938881e-02  1.59816989e+04]]
+rms error in linear fit: 0.8939141375394563
+
+Null fit parameter: [129.62164744]
+Null covariance matrix: 
+[[0.14760308]]
+rms error in null fit: 1.0273431345609305
+
+chi-squared test statistic: 0.006148399566708041
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2002-05-25    3392   129.26170721914121    0.4558600179634341
+1 2014-08-30    16217   130.56783885148778    0.6752562602196354
+2 2017-07-25    19704   129.44672241850608    0.7140958464951217

@@ -1,0 +1,25 @@
+Distance between Magnetar and F
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [ 2.18894258e-02 -1.60375609e+04]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[inf inf]
+ [inf inf]]
+rms error in linear fit: 4.628900988706826e-13
+
+Null fit parameter: [84.6291111]
+Null covariance matrix: 
+[[0.01115488]]
+rms error in null fit: 0.16001543919469363
+
+chi-squared test statistic: 2.5336396803024627e-27
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2017-07-15    19703   84.5483658238477    0.26814683912017667
+1 2017-07-25    19704   84.76726008148384    0.35074215523972463

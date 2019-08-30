@@ -1,0 +1,26 @@
+Distance between Magnetar and OA
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [-9.47874583e-04  7.55163686e+02]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[ 1.01073660e-06 -7.43800283e-01]
+ [-7.43800283e-01  5.47362338e+05]]
+rms error in linear fit: 0.9778460836166016
+
+Null fit parameter: [57.62351131]
+Null covariance matrix: 
+[[0.26636108]]
+rms error in null fit: 1.3028247192416524
+
+chi-squared test statistic: 0.016475268133049167
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2014-08-02    16216   57.393748512581475    0.2808166312265307
+1 2014-08-30    16217   58.748466996797454    0.2904230091544715
+2 2017-07-25    19704   57.00785230694658    0.24302796645212296

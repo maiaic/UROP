@@ -1,0 +1,25 @@
+Distance between Y and L
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [-2.12443071e-04  2.05228150e+02]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[inf inf]
+ [inf inf]]
+rms error in linear fit: 2.0097183471152322e-14
+
+Null fit parameter: [49.05038653]
+Null covariance matrix: 
+[[0.11886364]]
+rms error in null fit: 0.4998961114900065
+
+chi-squared test statistic: 8.225491072968052e-30
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2008-07-25    9174   49.454692931480835    0.459959144876949
+1 2017-07-25    19704   48.75639255790425    0.39222309275943734

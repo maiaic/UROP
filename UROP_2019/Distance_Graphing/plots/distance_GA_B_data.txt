@@ -1,0 +1,25 @@
+Distance between GA and B
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [-2.94318235e-05  4.21201012e+02]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[inf inf]
+ [inf inf]]
+rms error in linear fit: 5.684341886080802e-14
+
+Null fit parameter: [399.6060768]
+Null covariance matrix: 
+[[0.00382168]]
+rms error in null fit: 0.0946953355959444
+
+chi-squared test statistic: 8.084963010792018e-30
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2005-07-29    5952   399.6523253689855    0.8459953572055763
+1 2017-07-25    19704   399.5234434136766    1.1308281128095086

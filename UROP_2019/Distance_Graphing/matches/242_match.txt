@@ -1,0 +1,129 @@
+ input (dup) src file : data/242/repro/242_src.fits
+ input ref src file   : data/19704/repro/19704_src.fits
+ input wcsfile        : 19704/repro/19704_broad_thresh.img
+ debug level          : 1
+
+15 common sources found between: 
+data/19704/repro/19704_src.fits
+data/242/repro/242_src.fits
+After deleting poor matches, 14 sources remain
+
+Source Residuals
+----------------
+ Ref#  Dup#    Ref RA      Ref Dec.    Prior  Transfm  Resid Incl
+                                       Resid  Resid    Ratio
+   0     1    266.42179   -29.03626    0.18    0.26    1.25    Y
+   1     5    266.42017   -29.03024    0.32    0.40    1.08    Y
+   2     8    266.42275   -29.02713    0.29    0.40    1.57    Y
+   6    19    266.42434   -29.01055    0.09    0.49    2.04    Y
+   8    21    266.41461   -29.00904    0.53    0.11    0.53    Y
+  32    47    266.42404   -28.98196    0.89    0.49    3.27    Y
+  10    22    266.41575   -29.00825    0.38    0.15    1.28    Y
+  13    25    266.40866   -29.00627    0.24    0.27    1.76    Y
+  14    26    266.41584   -29.00612    0.16    0.29    2.44    Y
+  19    32    266.42326   -28.99801    0.46    0.43    2.63    Y
+  22    38    266.41626   -28.98381    0.64    0.51    2.15    Y
+  26    39    266.43049   -29.03700    1.34    0.95    3.57    Y
+  30    16    266.41767   -29.01515    1.65    1.23    7.54    Y
+  31    49    266.41419   -29.01271    1.05    1.09    5.24    Y
+
+Source Residuals, before/after transform (arcsec), and percentage improvement:
+
+   Average Residuals:         0.587114   0.505388   13.92%
+   Maximum Residuals:         1.653343   1.234425   25.34%
+
+Source Residual Ratios, before/after transform, and percentage improvement:
+
+   Average Residual Ratios:   3.111163   2.597545   16.51%
+   Maximum Residual Ratios:   10.104055   7.543924   25.34%
+
+
+Source Residuals
+----------------
+ Ref#  Dup#    Ref RA      Ref Dec.    Prior  Transfm  Resid Incl
+                                       Resid  Resid    Ratio
+   0     1    266.42179   -29.03626    0.18    0.16    0.80    Y
+   1     5    266.42017   -29.03024    0.32    0.37    0.99    Y
+   2     8    266.42275   -29.02713    0.29    0.36    1.42    Y
+   6    19    266.42434   -29.01055    0.09    0.40    1.65    Y
+   8    21    266.41461   -29.00904    0.53    0.20    0.98    Y
+  32    47    266.42404   -28.98196    0.89    0.58    3.89    Y
+  10    22    266.41575   -29.00825    0.38    0.16    1.33    Y
+  13    25    266.40866   -29.00627    0.24    0.21    1.41    Y
+  14    26    266.41584   -29.00612    0.16    0.21    1.79    Y
+  19    32    266.42326   -28.99801    0.46    0.37    2.27    Y
+  22    38    266.41626   -28.98381    0.64    0.53    2.27    Y
+  26    39    266.43049   -29.03700    1.34    1.02    3.81    Y
+  30    16    266.41767   -29.01515    1.65    1.33    8.12    N
+  31    49    266.41419   -29.01271    1.05    1.04    4.99    Y
+
+Source Residuals, before/after transform (arcsec), and percentage improvement:
+
+   Average Residuals:         0.505096   0.432456   14.38%
+   Maximum Residuals:         1.340247   1.040513   22.36%
+
+Source Residual Ratios, before/after transform, and percentage improvement:
+
+   Average Residual Ratios:   2.812568   2.123056   24.52%
+   Maximum Residual Ratios:   5.944510   4.992051   16.02%
+
+
+Source Residuals
+----------------
+ Ref#  Dup#    Ref RA      Ref Dec.    Prior  Transfm  Resid Incl
+                                       Resid  Resid    Ratio
+   0     1    266.42179   -29.03626    0.18    0.20    1.00    Y
+   1     5    266.42017   -29.03024    0.32    0.31    0.84    Y
+   2     8    266.42275   -29.02713    0.29    0.31    1.22    Y
+   6    19    266.42434   -29.01055    0.09    0.43    1.81    Y
+   8    21    266.41461   -29.00904    0.53    0.16    0.79    Y
+  32    47    266.42404   -28.98196    0.89    0.52    3.52    Y
+  10    22    266.41575   -29.00825    0.38    0.07    0.61    Y
+  13    25    266.40866   -29.00627    0.24    0.18    1.18    Y
+  14    26    266.41584   -29.00612    0.16    0.22    1.79    Y
+  19    32    266.42326   -28.99801    0.46    0.46    2.79    Y
+  22    38    266.41626   -28.98381    0.64    0.45    1.91    Y
+  26    39    266.43049   -29.03700    1.34    1.04    3.91    Y
+  30    16    266.41767   -29.01515    1.65    1.29    7.87    N
+  31    49    266.41419   -29.01271    1.05    1.13    5.41    N
+
+Source Residuals, before/after transform (arcsec), and percentage improvement:
+
+   Average Residuals:         0.459706   0.363968   20.83%
+   Maximum Residuals:         1.340247   1.043021   22.18%
+
+Source Residual Ratios, before/after transform, and percentage improvement:
+
+   Average Residual Ratios:   2.602359   1.780523   31.58%
+   Maximum Residual Ratios:   5.944510   3.911523   34.20%
+
+
+Source Residuals
+----------------
+ Ref#  Dup#    Ref RA      Ref Dec.    Prior  Transfm  Resid Incl
+                                       Resid  Resid    Ratio
+   0     1    266.42179   -29.03626    0.18    0.18    0.86    Y
+   1     5    266.42017   -29.03024    0.32    0.22    0.59    Y
+   2     8    266.42275   -29.02713    0.29    0.22    0.86    Y
+   6    19    266.42434   -29.01055    0.09    0.38    1.59    Y
+   8    21    266.41461   -29.00904    0.53    0.25    1.19    Y
+  32    47    266.42404   -28.98196    0.89    0.58    3.92    Y
+  10    22    266.41575   -29.00825    0.38    0.07    0.62    Y
+  13    25    266.40866   -29.00627    0.24    0.09    0.56    Y
+  14    26    266.41584   -29.00612    0.16    0.14    1.20    Y
+  19    32    266.42326   -28.99801    0.46    0.50    3.01    Y
+  22    38    266.41626   -28.98381    0.64    0.41    1.74    Y
+  26    39    266.43049   -29.03700    1.34    1.14    4.27    N
+  30    16    266.41767   -29.01515    1.65    1.35    8.27    N
+  31    49    266.41419   -29.01271    1.05    1.16    5.58    N
+
+Source Residuals, before/after transform (arcsec), and percentage improvement:
+
+   Average Residuals:         0.379657   0.276258   27.23%
+   Maximum Residuals:         0.885725   0.583767   34.09%
+
+Source Residual Ratios, before/after transform, and percentage improvement:
+
+   Average Residual Ratios:   2.362902   1.468576   37.85%
+   Maximum Residual Ratios:   5.944510   3.917933   34.09%
+

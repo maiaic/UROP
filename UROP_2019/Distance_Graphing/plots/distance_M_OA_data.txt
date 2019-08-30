@@ -1,0 +1,26 @@
+Distance between M and OA
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [-7.56414199e-05  1.24600802e+02]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[ 2.65870209e-08 -1.95058108e-02]
+ [-1.95058108e-02  1.43107948e+04]]
+rms error in linear fit: 0.8899026257131902
+
+Null fit parameter: [69.10578398]
+Null covariance matrix: 
+[[0.10844786]]
+rms error in null fit: 0.9110609679391719
+
+chi-squared test statistic: 0.01148487943902074
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2002-05-25    3392   69.24435346941027    0.39055843935359164
+1 2014-08-30    16217   69.76056924518487    0.6060260938182074
+2 2017-07-25    19704   68.48765224502911    0.47924756307513977

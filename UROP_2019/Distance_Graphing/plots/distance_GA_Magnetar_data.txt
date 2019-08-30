@@ -1,0 +1,25 @@
+Distance between GA and Magnetar
+------------------------------------------------
+
+STATISTICS
+
+Linear fit parameters: [ 4.09892950e-04 -7.56539031e+01]
+Degrees of freedom: 1
+Linear covariance matrix: 
+[[inf inf]
+ [inf inf]]
+rms error in linear fit: 0.0
+
+Null fit parameter: [225.80109918]
+Null covariance matrix: 
+[[0.05535343]]
+rms error in null fit: 0.46250359213926895
+
+chi-squared test statistic: 0.0
+
+------------------------------------------------
+
+DATA
+## DATE    OBSID   DISTANCE    ERROR
+0 2013-10-04    15044   225.67684947653726    0.4394876990893721
+1 2017-07-25    19704   226.2466006767462    0.8321921761272861
